@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villagio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" href="/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__row">
+            <div class="container">
+                <div class="header__logo">
+                    <img src="./img/icons/logo.svg" alt="logo">
+                    <p>Villagio Moscow</p>
+                </div>
+                <div class="header__controls">
+                    <div class="header__control">
+                        <img src="./img/icons/phone.svg" alt="phone">
+                    </div>
+                    <div class="header__control">
+                        <img src="./img/icons/sandwich.svg" alt="sandwich">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__hero">
+            <div class="container">
+                <span>Villagio Moscow</span>
+                <h1>Сервис для покупки и продажи недвижимости класса Deluxe в Москве</h1>
+                <button class="red-btn">Подобрать квартиру</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="best">
+            <div class="container">
+                <h2 class="best__heading heading">Лучшие предложения рынка элитной недвижимости</h2>
+                <div class="best__swiper-wrapper">
+                    <div class="bestSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="best__swiper-img">
+                                <img src="./img/best.jpg" alt="">
+                            </div>
+                            <div class="best__swiper-text">
+                                <div class="best__swiper-left">
+                                    <div>
+                                        <div class="green-ball"></div>
+                                        <span>Шелепихенская набережная дом 1489</span>
+                                    </div>
+                                    <h3>Название объекта</h3>
+                                </div>
+                                <div class="best__swiper-center">
+                                    <span>130 000 000 ₽</span>
+                                    <span>7 этаж</span>
+                                    <span>105 м2</span>
+                                </div>
+                                <div class="best__swiper-right">
+                                    <a href="#!">Подробнее</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="best__swiper-img">
+                                <img src="./img/best.jpg" alt="">
+                            </div>
+                            <div class="best__swiper-text">
+                                <div class="best__swiper-left">
+                                    <div>
+                                        <div class="green-ball"></div>
+                                        <span>Шелепихенская набережная дом 1489</span>
+                                    </div>
+                                    <h3>Название объекта</h3>
+                                </div>
+                                <div class="best__swiper-center">
+                                    <span>130 000 000 ₽</span>
+                                    <span>7 этаж</span>
+                                    <span>105 м2</span>
+                                </div>
+                                <div class="best__swiper-right">
+                                    <a href="#!">Подробнее</a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="best__swiper-img">
+                                <img src="./img/best.jpg" alt="">
+                            </div>
+                            <div class="best__swiper-text">
+                                <div class="best__swiper-left">
+                                    <div>
+                                        <div class="green-ball"></div>
+                                        <span>Шелепихенская набережная дом 1489</span>
+                                    </div>
+                                    <h3>Название объекта</h3>
+                                </div>
+                                <div class="best__swiper-center">
+                                    <span>130 000 000 ₽</span>
+                                    <span>7 этаж</span>
+                                    <span>105 м2</span>
+                                </div>
+                                <div class="best__swiper-right">
+                                    <a href="#!">Подробнее</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="best__swiper-arrows">
+                        <div class="best__swiper-left__arrow" id="best-left">
+                            <img src="./img/icons/left-arrow.svg" alt="left arrow">
+                        </div>
+                        <div class="best__swiper-right__arrow" id="best-right">
+                            <img src="./img/icons/right-arrow.svg" alt="right arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="best__second-swiper">
+                    <div class="bestSwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="bestSwiper2__img">
+                                <img src="./img/best-small.jpg" alt="">
+                            </div>
+                            <div class="bestSwiper2__content">
+                                <div class="bestSwiper2__name">
+                                    <div class="green-ball"></div>
+                                    <h3>Квартира в Opus</h3>
+                                </div>
+                                <div class="bestSwiper2__tech">
+                                    <span>105 м2</span>
+                                    <span>7 этаж</span>
+                                    <span>130 000 000 ₽</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="bestSwiper2__img">
+                                <img src="./img/best-small.jpg" alt="">
+                            </div>
+                            <div class="bestSwiper2__content">
+                                <div class="bestSwiper2__name">
+                                    <div class="green-ball"></div>
+                                    <h3>Квартира в Opus</h3>
+                                </div>
+                                <div class="bestSwiper2__tech">
+                                    <span>105 м2</span>
+                                    <span>7 этаж</span>
+                                    <span>130 000 000 ₽</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="bestSwiper2__img">
+                                <img src="./img/best-small.jpg" alt="">
+                            </div>
+                            <div class="bestSwiper2__content">
+                                <div class="bestSwiper2__name">
+                                    <div class="green-ball"></div>
+                                    <h3>Квартира в Opus</h3>
+                                </div>
+                                <div class="bestSwiper2__tech">
+                                    <span>105 м2</span>
+                                    <span>7 этаж</span>
+                                    <span>130 000 000 ₽</span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="best__second-arrows">
+                        <div class="best__second-left" id="best2-left">
+                            <img src="./img/icons/left-arrow.svg" alt="left">
+                        </div>
+                        <div class="best__second-right" id="best2-right">
+                            <img src="./img/icons/right-arrow.svg" alt="left">
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="premium">
+            <div class="container">
+                <h2 class="heading premium__heading">Подборки премиальной недвижимости от наших экспертов</h2>
+                <div class="premiumSwiper-wrapper">
+                    <div class="premiumSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="premium__slide-img">
+                                <img src="./img/premium.jpg" alt="">
+                            </div>
+                            <div class="premium__slide-text">
+                                <h3>Топ ЖК deluxe класса в цао у воды</h3>
+                                <a href="#!">Подробнее</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="premium__slide-img">
+                                <img src="./img/premium.jpg" alt="">
+                            </div>
+                            <div class="premium__slide-text">
+                                <h3>Топ ЖК deluxe класса в цао у воды</h3>
+                                <a href="#!">Подробнее</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="premium__slide-img">
+                                <img src="./img/premium.jpg" alt="">
+                            </div>
+                            <div class="premium__slide-text">
+                                <h3>Топ ЖК deluxe класса в цао у воды</h3>
+                                <a href="#!">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiperPremium-pagination"></div>
+                    <div class="premiumSwiper-arrows">
+                      <div class="premiumSwiper-left arrow-left" id="premium-left">
+                          <img src="./img/icons/left-arrow.svg" alt="left">
+                      </div>
+                      <div class="premiumSwiper-right arrow-right" id="premium-right">
+                          <img src="./img/icons/right-arrow.svg" alt="right">
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section class="zhk">
+            <div class="container">
+                <div class="zhk__header">
+                    <div class="zhk__heading heading">
+                        <h2>ЖК Москвы премиум класса</h2>
+                    </div>
+                    <div class="zhk__btn">
+                        <button class="white-btn">Смотреть все</button>
+                    </div>
+                </div>
+                <div class="zhk__content">
+                    <ul class="zhk__list">
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <picture>
+                                    <source srcset="./img/zhk/zhk-mobile/duo-mobile.jpg" media="(max-width: 768px)">
+                                    <img src="./img/zhk/duo.jpg" alt="duo">
+                                </picture>
+                            </div>
+                            <div class="zhk__text">
+                                <p>ЖК DUO</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <picture>
+                                    <source srcset="./img/zhk/zhk-mobile/sydney-mobile.jpg" media="(max-width: 768px)">
+                                    <img src="./img/zhk/sydney.jpg" alt="sydney">
+                                </picture>
+                            </div>
+                            <div class="zhk__text">
+                                <p>Sydney Prime</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <picture>
+                                    <source srcset="./img/zhk/zhk-mobile/forum-mobile.jpg" media="(max-width: 768px)">
+                                    <img src="./img/zhk/forum.jpg" alt="forum">
+                                </picture>
+                            </div>
+                            <div class="zhk__text">
+                                <p>Forum</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <picture>
+                                    <source srcset="./img/zhk/zhk-mobile/foriver-mobile.jpg" media="(max-width: 768px)">
+                                    <img src="./img/zhk/foriver.jpg" alt="foriver">
+                                </picture>
+                            </div>
+                            <div class="zhk__text">
+                                <p>Foriver Residence</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <img src="./img/zhk/opus.jpg" alt="opus">
+                            </div>
+                            <div class="zhk__text">
+                                <p>Opus</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <img src="./img/zhk/doro.jpg" alt="doro mio">
+                            </div>
+                            <div class="zhk__text">
+                                <p>Doro Milo</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <img src="./img/zhk/savinskaya.jpg" alt="savinskaya">
+                            </div>
+                            <div class="zhk__text">
+                                <p>Саввинская 17</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <img src="./img/zhk/primavera.jpg" alt="primavera">
+                            </div>
+                            <div class="zhk__text">
+                                <p>Primavera</p>
+                            </div>
+                        </li>
+                        <li class="zhk__item">
+                            <div class="zhk__img">
+                                <img src="./img/zhk/logos.jpg" alt="logos">
+                            </div>
+                            <div class="zhk__text">
+                                <p>Logos</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zhk__btn">
+                    <button class="red-btn">Смотреть все</button>
+                </div>
+            </div>
+        </section>
+        <section class="book1">
+            <div class="container">
+                <div class="book1__content">
+                    <div class="book1__img">
+                        <img src="./img/book1-1.png" alt="book">
+                    </div>
+                    <div class="book1__text">
+                        <span>Selection of residential</span>
+                        <h2 class="heading">ПОЛУЧИТЕ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ В СТРОЯЩИХСЯ  ПРОЕКТАХ МОСКВЫ</h2>
+                        <button class="white-btn">Смотреть все</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secondary">
+            <div class="container">
+                <div class="secondary__header">
+                    <div class="secondary__heading heading">
+                        <h2>Вторичная недвижимость класса Deluxe</h2>
+                    </div>
+                    <div class="secondary__btn">
+                        <button class="white-btn">Смотреть все</button>
+                    </div>
+                </div>
+                <div class="secondary__content">
+                    <ul class="secondary__list">
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="secondary__item">
+                            <div class="secondary__img">
+                                <img src="./img/secondary.jpg" alt="secondary">
+                            </div>
+                            <div class="secondary__card-content">
+                                <div class="secondary__card-text">
+                                    <div class="secodary__card-name">
+                                        <div class="green-ball"></div>
+                                        <h3>Квартира в Opus</h3>
+                                    </div>
+                                    <div class="secondary__card-info">
+                                        <div>
+                                            <p class="card-square">105 м2</p>
+                                            <p class="card-floor">7 этаж</p>
+                                            <p class="card-price">130 000 000 ₽</p>
+                                        </div>
+                                        <div class="secondary__card-link">
+                                            <a href="#!">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="secondary__btn">
+                    <button class="red-btn">Смотреть все</button>
+                </div>
+            </div>
+        </section>
+        <section class="book2">
+            <div class="container">
+                <div class="book2__content">
+                    <div class="book2__img">
+                        <img src="./img/book2-2.png" alt="book">
+                    </div>
+                    <div class="book2__text">
+                        <span>DeLuxe secondary market</span>
+                        <h2 class="heading">ПРЕДЛАГАЕМ КОЛЛЕКЦИЮ РОСКОШНЫХ КВАРТИР НА ВТОРИЧНОМ РЫНКЕ</h2>
+                        <button class="white-btn">Получить каталог</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.contact {
+    background-color: var(--beige);
+}
+.contact__content {
+    margin-bottom: 8.688rem;
+    text-align: center;
+    line-height: 130%;
+    padding: 3.75rem 0 3.438rem;
+    span {
+        font-size: 2.125rem;
+        color: var(--red);
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 2.125rem;
+        text-transform: uppercase;
+        margin: 3.563rem 0 2.875rem;
+    }
+    p {
+        font-family: var(--second-font);
+        font-size: 1rem;
+        text-align: center;
+        color: var(--black);
+        max-width: 21.625rem;
+        margin: 0 auto;
+    }
+}

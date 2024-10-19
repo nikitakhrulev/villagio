@@ -1,0 +1,124 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    .container {
+        background-image: url(../img/footer-bg.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+}
+.footer__content {
+    padding: 2rem 0 2.125rem;
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        padding: 1.188rem 0 1.625rem;
+    }
+}
+.footer__logo {
+    margin-bottom: 5.5rem;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 3.438rem;
+    }
+}
+.footer__main {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+    margin-bottom: 12.188rem;
+    @media only screen and (max-width: 768px) {
+       grid-template-columns: none;
+    }
+}
+.footer__form {
+    h2 {
+        font-size: 2.5rem;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 1.563rem;
+        @media only screen and (max-width: 768px) {
+            font-size: 1.75rem;
+        }
+    }
+    p {
+        font-family: var(--second-font);
+        line-height: 130%;
+        margin-bottom: 2.875rem;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        max-width: 26.5rem;
+        display: grid;
+        gap: 20px;
+        input {
+            opacity: 0.64;
+            border-bottom: 1px solid var(--white);
+            padding-bottom: 0.813rem;
+            width: 100%;
+        }
+    }
+    .footer__form-p {
+        font-weight: 300;
+        max-width: 19.938rem;
+        @media only screen and (max-width: 768px) {
+            margin: 0 auto 3.063rem;
+        }
+    }
+    .contactForm__agree {
+        margin-bottom: 0;
+        margin-top: 1.25rem;
+        text-align: start;
+        a {
+            color: var(--white);
+        }
+        p {
+            font-size: 0.625rem;
+        }
+        @media only screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+.footerForm__btn {
+    font-size: 0.875rem;
+    button {
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+.footer__list {
+    opacity: 0.64;
+    display: grid;
+    gap: 3.5rem;
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 3fr 3fr;
+        margin-top: 5.563rem;
+        font-size: 0.875rem;
+        gap: 2rem 3.5rem;
+    }
+}
+.footer__bottom {
+    opacity: 0.64;
+    font-family: var(--second-font);
+    display: grid;
+    font-size: 0.875rem;
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+    .footer__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: var(--white);
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: none;
+        gap: 1rem;
+        font-size: 0.625rem;
+    }
+}

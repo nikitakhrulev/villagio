@@ -1,20 +1,31 @@
 .contact {
     background-color: var(--beige);
+    background-image: url(../img/contact-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .contact__content {
     margin-bottom: 8.688rem;
     text-align: center;
     line-height: 130%;
-    padding: 3.75rem 0 3.438rem;
+    padding-top: 3.75rem;
     span {
         font-size: 2.125rem;
         color: var(--red);
         text-transform: uppercase;
+        @media only screen and (max-width: 768px) {
+           display: none;
+        }
     }
     h2 {
         font-size: 2.125rem;
         text-transform: uppercase;
         margin: 3.563rem 0 2.875rem;
+        @media only screen and (max-width: 768px) {
+            line-height: 110%;
+            font-size: 1.75rem;
+            margin: 0 0 1.5rem;
+        }
     }
     p {
         font-family: var(--second-font);
@@ -24,4 +35,73 @@
         max-width: 21.625rem;
         margin: 0 auto;
     }
+    @media only screen and (max-width: 768px) {
+        padding-top: 4.25rem;
+        margin-bottom: 3.25rem;
+    }
+}
+.contact__form {
+    padding-bottom: 3.438rem;
+    width: 100%;
+    max-width: 54.25rem;
+    margin: 0 auto;
+}
+.contactForm {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    align-items: flex-end;
+    gap: 1.25rem;
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.contactForm__input {
+    border-bottom: 1px solid var(--black);
+    input {
+        padding-bottom: 0.813rem;
+    }
+    @media only screen and (max-width: 768px) {
+       width: 100%;
+    }
+}
+.contactForm__btn {
+    button {
+        width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.contactForm__agree {
+    margin-top: 0.75rem;
+    font-family: var(--second-font);
+    font-size: 0.625rem;
+    opacity: 0.64;
+    a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: var(--black);
+    }
+    @media only screen and (max-width: 768px) {
+       text-align: center;
+    }
+}
+.contact__form-call {
+    margin-top: 2.438rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    a {
+        color: var(--black);
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+        gap: 2rem;
+     }
 }

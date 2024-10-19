@@ -18,18 +18,26 @@ body {
     padding: 0.813rem 1.125rem;
     color: var(--white);
     border-radius: 100px;
-    @media only screen and (max-width: 768px) {
-        
-    }
 }
 .white-btn {
     background-color: var(--white);
     border-radius: 100px;
     padding: 0.813rem 1.125rem;
-    font-weight: 400;
-    font-size: 1rem;
     color: var(--red);
     border: 1px solid var(--red);
+}
+.black-btn {
+    background-color: transparent;
+    border-radius: 100px;
+    padding: 0.813rem 1.125rem;
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.black-white-btn {
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    padding: 0.813rem 1.125rem;
+    background-color: transparent;
 }
 .heading {
     font-family: var(--first-font);

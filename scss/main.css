@@ -109,14 +109,28 @@ body {
   color: var(--white);
   border-radius: 100px;
 }
+
 .white-btn {
   background-color: var(--white);
   border-radius: 100px;
   padding: 0.813rem 1.125rem;
-  font-weight: 400;
-  font-size: 1rem;
   color: var(--red);
   border: 1px solid var(--red);
+}
+
+.black-btn {
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 0.813rem 1.125rem;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.black-white-btn {
+  border: 1px solid var(--white);
+  border-radius: 100px;
+  padding: 0.813rem 1.125rem;
+  background-color: transparent;
 }
 
 .heading {
@@ -1001,23 +1015,38 @@ body {
 
 .contact {
   background-color: var(--beige);
+  background-image: url(../img/contact-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contact__content {
   margin-bottom: 8.688rem;
   text-align: center;
   line-height: 130%;
-  padding: 3.75rem 0 3.438rem;
+  padding-top: 3.75rem;
 }
 .contact__content span {
   font-size: 2.125rem;
   color: var(--red);
   text-transform: uppercase;
 }
+@media only screen and (max-width: 768px) {
+  .contact__content span {
+    display: none;
+  }
+}
 .contact__content h2 {
   font-size: 2.125rem;
   text-transform: uppercase;
   margin: 3.563rem 0 2.875rem;
+}
+@media only screen and (max-width: 768px) {
+  .contact__content h2 {
+    line-height: 110%;
+    font-size: 1.75rem;
+    margin: 0 0 1.5rem;
+  }
 }
 .contact__content p {
   font-family: var(--second-font);
@@ -1026,4 +1055,238 @@ body {
   color: var(--black);
   max-width: 21.625rem;
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .contact__content {
+    padding-top: 4.25rem;
+    margin-bottom: 3.25rem;
+  }
+}
+
+.contact__form {
+  padding-bottom: 3.438rem;
+  width: 100%;
+  max-width: 54.25rem;
+  margin: 0 auto;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+@media only screen and (max-width: 768px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contactForm__input {
+  border-bottom: 1px solid var(--black);
+}
+.contactForm__input input {
+  padding-bottom: 0.813rem;
+}
+@media only screen and (max-width: 768px) {
+  .contactForm__input {
+    width: 100%;
+  }
+}
+
+.contactForm__btn button {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .contactForm__btn {
+    width: 100%;
+  }
+}
+
+.contactForm__agree {
+  margin-top: 0.75rem;
+  font-family: var(--second-font);
+  font-size: 0.625rem;
+  opacity: 0.64;
+}
+.contactForm__agree a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: var(--black);
+}
+@media only screen and (max-width: 768px) {
+  .contactForm__agree {
+    text-align: center;
+  }
+}
+
+.contact__form-call {
+  margin-top: 2.438rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.contact__form-call a {
+  color: var(--black);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .contact__form-call {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+.footer .container {
+  background-image: url(../img/footer-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.footer__content {
+  padding: 2rem 0 2.125rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__content {
+    text-align: center;
+    padding: 1.188rem 0 1.625rem;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 5.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__logo {
+    margin-bottom: 3.438rem;
+  }
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  align-items: center;
+  margin-bottom: 12.188rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__main {
+    grid-template-columns: none;
+  }
+}
+
+.footer__form h2 {
+  font-size: 2.5rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: 1.563rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__form h2 {
+    font-size: 1.75rem;
+  }
+}
+.footer__form p {
+  font-family: var(--second-font);
+  line-height: 130%;
+  margin-bottom: 2.875rem;
+  width: 100%;
+}
+.footer__form form {
+  width: 100%;
+  max-width: 26.5rem;
+  display: grid;
+  gap: 20px;
+}
+.footer__form form input {
+  opacity: 0.64;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 0.813rem;
+  width: 100%;
+}
+.footer__form .footer__form-p {
+  font-weight: 300;
+  max-width: 19.938rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__form .footer__form-p {
+    margin: 0 auto 3.063rem;
+  }
+}
+.footer__form .contactForm__agree {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+  text-align: start;
+}
+.footer__form .contactForm__agree a {
+  color: var(--white);
+}
+.footer__form .contactForm__agree p {
+  font-size: 0.625rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__form .contactForm__agree {
+    text-align: center;
+  }
+}
+
+.footerForm__btn {
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 768px) {
+  .footerForm__btn button {
+    width: 100%;
+  }
+}
+
+.footer__list {
+  opacity: 0.64;
+  display: grid;
+  gap: 3.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer__list {
+    grid-template-columns: 3fr 3fr;
+    margin-top: 5.563rem;
+    font-size: 0.875rem;
+    gap: 2rem 3.5rem;
+  }
+}
+
+.footer__bottom {
+  opacity: 0.64;
+  font-family: var(--second-font);
+  display: grid;
+  font-size: 0.875rem;
+  grid-template-columns: 7fr 5fr;
+  align-items: center;
+}
+.footer__bottom .footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom .footer__links a {
+  color: var(--white);
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+@media only screen and (max-width: 768px) {
+  .footer__bottom {
+    grid-template-columns: none;
+    gap: 1rem;
+    font-size: 0.625rem;
+  }
 }/*# sourceMappingURL=main.css.map */

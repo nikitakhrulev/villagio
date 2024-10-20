@@ -1,30 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const bestSwiper = new Swiper('.bestSwiper', {
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 50,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '#best-right',
-        prevEl: '#best-left',
-      },
-    });
-    const bestSwiper2 = new Swiper('.bestSwiper2', {
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 20,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        // nextEl: '#best2-right',
-        // prevEl: '#best2-left',
-      },
-    });
+  
     const premiumSwiper = new Swiper('.premiumSwiper', {
       direction: 'horizontal',
       loop: true,
@@ -83,3 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     })
 })
+const openMenuBtn = document.querySelector('.open-mob-nav');
+const closeMenuBtn = document.querySelector('.close-mob-nav');
+const mobMenu = document.querySelector('.mob-menu');
+openMenuBtn.addEventListener('click', openMobMenu);
+closeMenuBtn.addEventListener('click', closeMobMenu);
+function openMobMenu() {
+  mobMenu.style.transform = 'translateX(0%)';
+}
+function closeMobMenu() {
+  mobMenu.style.transform = 'translateX(100%)'
+}

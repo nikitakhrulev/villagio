@@ -81,12 +81,10 @@ closePopupBtn.addEventListener('click', closePopup);
 function closePopup() {
   popup.style.opacity = 0;
   popup.style.pointerEvents = 'none';
-  console.log('hello')
 }
 function openPopup() {
   popup.style.opacity = 1;
   popup.style.pointerEvents = 'all';
-  console.log('hello')
 }
 
 

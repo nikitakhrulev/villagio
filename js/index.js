@@ -64,8 +64,27 @@ const mobMenu = document.querySelector('.mob-menu');
 openMenuBtn.addEventListener('click', openMobMenu);
 closeMenuBtn.addEventListener('click', closeMobMenu);
 function openMobMenu() {
+  mobMenu.style.opacity = '1';
   mobMenu.style.transform = 'translateX(0%)';
+  document.body.style.overflowY = 'hidden';
 }
 function closeMobMenu() {
   mobMenu.style.transform = 'translateX(100%)'
 }
+// function init() {
+//   let map = new ymaps.Map('map', {
+//     center: [55.750733529517035, 37.61912743815684],
+//     zoom: 14,
+//     controls: [],
+//       customization: [
+//         {
+//           stylers: [
+//             {
+
+//             }
+//           ]
+//         }
+//       ]
+//   });
+// }
+// ymaps.ready(init);

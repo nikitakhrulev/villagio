@@ -59,7 +59,7 @@
 .contactForm__input {
     border-bottom: 1px solid var(--black);
     input {
-        padding-bottom: 0.813rem;
+        padding: 0.813rem 0;
     }
     @media only screen and (max-width: 768px) {
        width: 100%;

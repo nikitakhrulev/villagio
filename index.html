@@ -11,6 +11,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./scss/main.css">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cd441c3f-1482-4604-8ca7-6ef974f3a531&lang=ru_RU"></script>
+    <!-- <script>
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+                {
+                    location: {
+                        center: [37.588144, 55.733842],
+                        zoom: 10
+                    }
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script> -->
 </head>
 <body>
     <header class="header">
@@ -590,6 +612,9 @@
                 </div>
             </div>
         </section>
+        <section class="map">
+            <div id="map" class="map"></div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -616,10 +641,18 @@
                     </div>
                     <div class="footer__nav">
                         <ul class="footer__list">
-                            <li class="footer__item">Раздел сайта</li>
-                            <li class="footer__item">Раздел сайта</li>
-                            <li class="footer__item">Раздел сайта</li>
-                            <li class="footer__item">Раздел сайта</li>
+                            <li class="footer__item">
+                                <a href="#!">Раздел сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!">Раздел сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!">Раздел сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!">Раздел сайта</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

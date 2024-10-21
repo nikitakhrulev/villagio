@@ -941,7 +941,7 @@ body {
   border-bottom: 1px solid var(--black);
 }
 .contactForm__input input {
-  padding-bottom: 0.813rem;
+  padding: 0.813rem 0;
 }
 @media only screen and (max-width: 768px) {
   .contactForm__input {
@@ -1037,6 +1037,7 @@ body {
 @media only screen and (max-width: 768px) {
   .footer__main {
     grid-template-columns: none;
+    margin-bottom: 5.5rem;
   }
 }
 
@@ -1066,7 +1067,7 @@ body {
 .footer__form form input {
   opacity: 0.64;
   border-bottom: 1px solid var(--white);
-  padding-bottom: 0.813rem;
+  padding: 0.813rem 0;
   width: 100%;
 }
 .footer__form .footer__form-p {
@@ -1105,7 +1106,6 @@ body {
 }
 
 .footer__list {
-  opacity: 0.64;
   display: grid;
   gap: 3.5rem;
 }
@@ -1116,6 +1116,10 @@ body {
     font-size: 0.875rem;
     gap: 2rem 3.5rem;
   }
+}
+
+.footer__item a {
+  color: var(--white);
 }
 
 .footer__bottom {
@@ -1146,11 +1150,12 @@ body {
 }
 
 .mob-menu {
+  display: none;
   height: 100vh;
   width: 100%;
   background: var(--red);
   top: 0;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   background-image: url(../img/mob-bg.svg);
   background-repeat: no-repeat;
@@ -1162,6 +1167,11 @@ body {
 .mob-menu .container {
   padding: 0 1.5rem;
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .mob-menu {
+    display: block;
+  }
 }
 
 .mob-menu__content {
@@ -1245,4 +1255,17 @@ body {
   color: var(--white);
   font-weight: 400;
   font-size: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 32.5rem;
+}
+
+.ymaps-2-1-79-gototech {
+  display: none !important;
+}
+
+.ymaps-2-1-79-copyright__link {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
 .mob-menu {
+    display: none;
     height: 100vh;
     width: 100%;
     background: var(--red);
     top: 0;
-    position: absolute;
+    position: fixed; // was absolute
     z-index: 99;
     background-image: url(../img/mob-bg.svg);
     background-repeat: no-repeat;
@@ -14,6 +15,9 @@
     .container {
         padding: 0 1.5rem;
         height: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+        display: block;
     }
 }
 .mob-menu__content {

@@ -8,6 +8,7 @@
     margin-bottom: 2.875rem;
     @media only screen and (max-width: 768px) {
         margin-bottom: 1.875rem;
+        text-transform: uppercase;
     }
 }
 .pressSwiper {
@@ -15,7 +16,7 @@
 }
 .press__slide-text {
     text-align: center;
-    padding: 1.5rem 1rem 2rem;
+    padding: 1.5rem 1rem 1.75rem;
     h4 {
         font-size: 1.25rem;
         line-height: 130%;
@@ -26,7 +27,7 @@
         font-family: var(--second-font);
         font-size: 0.875rem;
         line-height: 130%;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
     }
     a {
         color: var(--red);

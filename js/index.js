@@ -70,7 +70,27 @@ function openMobMenu() {
 }
 function closeMobMenu() {
   mobMenu.style.transform = 'translateX(100%)'
+  document.body.style.overflowY = 'visible';
 }
+//popup
+const closePopupBtn = document.querySelector('.popup__close');
+const openPopupBtn = document.querySelector('.open-popup');
+const popup = document.querySelector('.popup');
+openPopupBtn.addEventListener('click', openPopup)
+closePopupBtn.addEventListener('click', closePopup);
+function closePopup() {
+  popup.style.opacity = 0;
+  popup.style.pointerEvents = 'none';
+  console.log('hello')
+}
+function openPopup() {
+  popup.style.opacity = 1;
+  popup.style.pointerEvents = 'all';
+  console.log('hello')
+}
+
+
+
 // function init() {
 //   let map = new ymaps.Map('map', {
 //     center: [55.750733529517035, 37.61912743815684],

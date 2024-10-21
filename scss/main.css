@@ -1167,11 +1167,10 @@ body {
 }
 
 .mob-menu {
-  display: none;
   height: 100vh;
-  width: 100%;
   background: var(--red);
   top: 0;
+  right: 0;
   position: fixed;
   z-index: 99;
   background-image: url(../img/mob-bg.svg);
@@ -1188,6 +1187,7 @@ body {
 @media only screen and (max-width: 768px) {
   .mob-menu {
     display: block;
+    width: 100%;
   }
 }
 

@@ -1185,7 +1185,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 9.75rem;
+  margin-bottom: auto;
 }
 
 .mob-logo {
@@ -1233,10 +1233,10 @@ body {
 }
 
 .mob-menu__bottom {
-  margin: 0 auto;
+  margin: auto auto 0;
   text-align: center;
-  flex-grow: 1;
-  margin-top: auto;
+  /* flex-grow: 1; */
+  /* margin-top: auto; */
   display: flex;
   flex-direction: column;
   justify-content: end;

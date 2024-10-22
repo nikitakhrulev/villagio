@@ -1,0 +1,11 @@
+{
+  "name": "villagio1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nikitakhrulev/villagio.git",
+  "author": "Nikita <dubblerner.2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^11.1.14"
+  }
+}

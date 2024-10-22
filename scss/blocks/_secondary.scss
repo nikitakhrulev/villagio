@@ -28,6 +28,8 @@
 .secondary__item {
     max-width: 424px;
     @media only screen and (max-width: 768px) {
+        width: 100%;
+        max-width: none;
         &:nth-child(n+4) {
             display: none;
         }
@@ -71,6 +73,11 @@
 }
 .secondary__btn {
     text-align: center;
+    @media only screen and (max-width: 768px) {
+        button {
+            width: 100%;
+        }
+    }
 }
 .secondary__card-text {
     display: flex;
@@ -91,5 +98,12 @@
     }
     @media only screen and (max-width: 768px) {
         display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .secondary__img {
+        img {
+            width: 100%;
+        }
     }
 }

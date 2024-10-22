@@ -1505,6 +1505,20 @@ body {
   display: none !important;
 }
 
+.marker-class {
+  background-image: url(../img/icons/map-icon.svg);
+  background-repeat: no-repeat;
+  width: 183px;
+  height: 57px;
+}
+@media only screen and (max-width: 768px) {
+  .marker-class {
+    background-image: url(../img/icons/map-icon-mob.svg);
+    width: 108px;
+    height: 31;
+  }
+}
+
 .popup {
   z-index: 999;
   opacity: 0;

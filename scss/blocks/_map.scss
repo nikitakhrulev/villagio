@@ -9,3 +9,14 @@
 .ymaps-2-1-79-copyright__link {
     display: none!important;
 }
+.marker-class {
+    background-image: url(../img/icons/map-icon.svg);
+    background-repeat: no-repeat;
+    width: 183px;
+    height: 57px;
+    @media only screen and (max-width: 768px) {
+        background-image: url(../img/icons/map-icon-mob.svg);
+        width: 108px;
+        height: 31;
+    }
+}

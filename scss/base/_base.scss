@@ -18,6 +18,13 @@ body {
     padding: 0.813rem 1.125rem;
     color: var(--white);
     border-radius: 100px;
+    transition: .2s ease-in;
+    &:hover {
+        background-color: var(--red-hover);
+    }
+    &:active {
+        background-color: var(--red-active);
+    }
 }
 .white-btn {
     background-color: var(--white);
@@ -37,7 +44,17 @@ body {
     border: 1px solid var(--white);
     border-radius: 100px;
     padding: 0.813rem 1.125rem;
-    background-color: transparent;
+    background-color: var(--black);
+    transition: .2s ease-in;
+    backdrop-filter: blur(4px);
+    &:hover {
+        border-color: var(--black-hover);
+        background-color: var(--black-hover);
+    }
+    &:active {
+        border-color: var(--black-active);
+        background-color: var(--black-active);
+    }
 }
 .heading {
     font-family: var(--first-font);

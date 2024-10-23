@@ -3,33 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 1,
-        // spaceBetween: 20,
         navigation: {
           nextEl: '#best__main-right',
           prevEl: '#best__main-left',
         },
       });
-        // const bestSwiper2 = new Swiper('.bestSwiper2', {
-        //     direction: 'horizontal',
-        //     loop: true,
-        //     slidesPerView: 1,
-        //     // spaceBetween: 20,
-        //     navigation: {
-        //       nextEl: '#best__second-right',
-        //       prevEl: '#best__second-left',
-        //     },
-        //     breakpoints: {
-        //       1024: {
-        //         slidesPerView: 3,
-        //         spaceBetween: 20,
-        //       },
-        //     },
-        //   });
     const premiumSwiper = new Swiper('.premiumSwiper', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 1,
-      // spaceBetween: 20,
       pagination: {
         el: '.swiperPremium-pagination',
       },
@@ -83,9 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     })
 })
+//menu
 const openMenuBtn = document.querySelector('.open-mob-nav');
 const closeMenuBtn = document.querySelector('.close-mob-nav');
 const mobMenu = document.querySelector('.mob-menu');
+const menuLinks = document.querySelectorAll('.mob-item');
+menuLinks.forEach(link => link.addEventListener('click', closeMobMenu))
 openMenuBtn.addEventListener('click', openMobMenu);
 closeMenuBtn.addEventListener('click', closeMobMenu);
 function openMobMenu() {

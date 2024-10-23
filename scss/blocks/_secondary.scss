@@ -27,6 +27,7 @@
 }
 .secondary__item {
     max-width: 424px;
+    background-color: red;
     @media only screen and (max-width: 768px) {
         width: 100%;
         max-width: none;
@@ -44,11 +45,20 @@
     gap: 0.75rem;
     padding-left: 1rem;
     font-size: 1.25rem;
+    width: 100%;
+    max-width: 235px;
     text-transform: uppercase;
+    .green-ball {
+        flex-shrink: 0;
+    }
     @media only screen and (max-width: 768px) {
         padding-left: 0;
         margin-bottom: 1rem;
     }
+}
+.secondary__card-info__list {
+    display: grid;
+    gap: 0.75rem;
 }
 .secondary__card-info {
     text-align: end;

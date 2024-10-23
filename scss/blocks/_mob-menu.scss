@@ -12,6 +12,7 @@
     background-size: contain;
     transform: translateX(100%);
     transition: .5s ease-in-out;
+    z-index: 1000;
     .container {
         padding: 0 1.5rem;
         height: 100%;
@@ -42,6 +43,9 @@
         color: var(--white);
         font-size: 0.875rem;
     }
+}
+.mob-close {
+    cursor: pointer;
 }
 .mob-list {
     text-align: center;

@@ -13,10 +13,18 @@
 }
 .pressSwiper {
     overflow: hidden;
+    .swiper-slide {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .press__slide-text {
     text-align: center;
     padding: 1.5rem 1rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     h4 {
         font-size: 1.25rem;
         line-height: 130%;
@@ -24,10 +32,17 @@
         margin-bottom: 1rem;
     }
     p {
+        // font-family: var(--second-font);
+        // font-size: 0.875rem;
+        // line-height: 130%;
+        // margin-bottom: 2rem; // x
         font-family: var(--second-font);
         font-size: 0.875rem;
         line-height: 130%;
-        // margin-bottom: 2rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
     a {
         color: var(--red);
@@ -35,6 +50,9 @@
         text-underline-offset: 3px;
         text-decoration-skip-ink: none;
     }
+}
+.press__slide-year {
+    margin-top: auto;
 }
 .press__content {
     position: relative;
